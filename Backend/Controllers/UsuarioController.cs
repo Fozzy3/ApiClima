@@ -11,39 +11,18 @@ namespace Backend.Controllers
 {
     public class UsuarioController : ApiController
     {   
-        public List<Usuario> Get()
+        public List<Usuario> GET()
         {
             return UsuarioData.Listar();
         }
-        
-        
-        /*
-        // GET api/<controller>
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
 
-        // GET api/<controller>/5
-        public string Get(int id)
+        public List<Inicio> GET()
         {
-            return "value";
+            return UsuarioData.ListarInicio();
         }
-
-        // POST api/<controller>
-        public void Post([FromBody] string value)
+        public bool Post([FromBody] Guardar oGuardar)
         {
+            return UsuarioData.Registrar(oGuardar);
         }
-
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        public void Delete(int id)
-        {
-        }
-        */
     }
 }
