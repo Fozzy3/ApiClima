@@ -10,11 +10,13 @@ using System.Web.Http;
 namespace Backend.Controllers
 {
     public class UsuarioController : ApiController
-    {   
+    { 
+        /*
+        [HttpGet]
         public List<Usuario> GET()
         {
             return UsuarioData.Listar();
-        }
+        }*/
 
         public List<Inicio> GET()
         {
