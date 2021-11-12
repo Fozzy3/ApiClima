@@ -1,6 +1,6 @@
 # ApiClima
 
-Este es el resptectivo backend del aplicativo de NicePeople.
+Este es el resptectivo backend del aplicativo de una Prueba Tecnica.
 
 Ha sido desarrollado en VisualStudio, en C# y .Net.
 
